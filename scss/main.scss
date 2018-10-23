@@ -1,0 +1,195 @@
+/*css reset*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 70%;
+  font: inherit;
+  vertical-align: baseline; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*smart-phone*/
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 1rem; }
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 2rem; }
+
+h2 {
+  font-family: "Lobster", cursive;
+  font-size: 1.5rem; }
+
+.box {
+  max-width: 100rem;
+  margin: 0 1rem 1rem 1rem; }
+
+.product-gallery img {
+  width: 100%;
+  height: auto; }
+
+.map-wrapper {
+  position: relative;
+  width: 50%;
+  padding: 0 0 50% 0;
+  transform: translateX(50%); }
+
+footer {
+  text-align: center; }
+
+.map-wrapper iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none; }
+
+nav ul li a {
+  display: block;
+  background-color: black;
+  text-align: center;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  color: lightgray; }
+
+nav ul li a:hover {
+  background-color: red; }
+
+figure {
+  position: relative;
+  width: 100%; }
+
+figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 7px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 0.2rem; }
+
+  .logo {
+    height:150px;
+    width:auto;
+  }
+
+.masthead {
+  background-image: url("../images/bakery.jpg");
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  position: relative; }
+
+.masthead h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 5rem;
+  color: black; }
+
+body {
+  font-size: 1rem; }
+
+/*This is my Form*/
+form {
+  max-width: 80rem;
+  margin: 1rem;
+  margin-top: 5rem;
+  background-color: black;
+  color: white; }
+
+fieldset {
+  border: none;
+  padding: 0 0 1rem 0; }
+
+/*This is for my text*/
+input[type=text],
+input[type=email],
+input[type=submit],
+textarea {
+  width: calc(100% - 2rem);
+  margin: 1rem; }
+
+input[type=checkbox] {
+  position: absolute; }
+
+label {
+  display: block;
+  margin: 0 0 0.5rem 0; }
+
+input, textarea {
+  width: calc(100% - 2rem);
+  border: 1px solid #ddd;
+  padding: 0.5rem; }
+
+/*table for my hours and days*/
+table {
+  border-collapse: collapse;
+  width: calc(100% - 1.5rem);
+  margin: 2rem auto; }
+
+th {
+  border: 5px solid black; }
+
+td {
+  border: 5px solid black; }
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both; }
+
+/*tablet view*/
+@media all and (min-width: 768px) {
+  .column {
+    width: 50%;
+    float: left; }
+  .hours {
+    width: 50%;
+    float: right; }
+  .product-gallery li figure {
+    width: calc(50% - 4rem);
+    margin: 2rem;
+    float: left; }
+  /* this is my option bar*/
+  .main-nav ul li {
+    width: 33.33%;
+    float: left; }
+  .footer-nav ul li {
+    width: 25%;
+    float: left; } }
+
+.footer-content {
+  clear: both; }
+
+/*desktop*/
+@media all and (min-width: 1200px) {
+  .product-gallery li figure {
+    width: calc(33.3% - 4rem);
+    margin: 2rem; } }
+
+/*# sourceMappingURL=main.scss.map */
